@@ -18,8 +18,8 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-// Auto-add reveal classes to common elements
-document.querySelectorAll('.stat-item, .feature-card, .transform-card, .who-item, .pain-inner, .month-inner, .about-section, .program-header, .pt-card, .faq-item, .footer-top, .footer-bottom').forEach((el, i) => {
+// Auto-add reveal classes to common elements (excluding pt-card for cleaner PT/OC sections)
+document.querySelectorAll('.stat-item, .feature-card, .transform-card, .who-item, .pain-inner, .month-inner, .about-section, .program-header, .faq-item, .footer-top, .footer-bottom').forEach((el, i) => {
   el.classList.add('reveal');
   el.classList.add(`reveal-delay-${(i % 5) + 1}`);
   revealObserver.observe(el);

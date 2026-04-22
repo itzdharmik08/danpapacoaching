@@ -2893,18 +2893,6 @@ nav ul a.active::after {
 .pain-head em {
   position: relative;
 }
-
-
-/* PT card hover */
-.pt-card {
-  transition: box-shadow 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.pt-card:hover {
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  transform: translateY(-4px);
-}
-
 /* CTA button magnetic hover (subtle) */
 .pt-cta {
   position: relative;
